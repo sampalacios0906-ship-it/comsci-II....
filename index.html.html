@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form</title>
+<style>
+body{
+  background-color:#ededed;
+  font-family:"arial";
+  font-size:14px;
+}
+
+.TitleBlue{
+  font-size:26px;
+  font-weight:bold;
+  color:#0078ae;
+  text-align:center;
+  margin-top:30px;
+}
+
+/*CSS for the division that holds contents for contact us page etc.*/
+#Content4{
+  width:100%;
+  background-color:#ededed;
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+#contact-area{
+  width:512px;
+  color:#000000;
+}
+
+#contact-area textarea:focus, #contact-area input:focus{
+  border:1px solid #87b234;
+}
+
+#contact-area input, #contact-area textarea{
+  padding:5px; /*controls textbox height*/
+  width:395px;
+  margin:0px 0px 5px 0px; /*controls spacing between textbox */
+  border:1px solid #ccc;
+}
+
+#contact-area textarea{
+  height:400px;
+  resize:none;
+}
+
+#contact-area input.submit-button{
+  width:80px;
+  margin-left:95px;
+  float:left;
+}
+
+label{
+  float:left; /*controls all elements in the form to appear on the left*/
+  text-align:right;
+  margin-right:15px; /*controls spacing between label and textbox*/
+  width:80px;
+}
+
+form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+<div id="Content4">
+  <div id="contact-area">
+    <div class="TitleBlue">We love to hear from you. Email us.</div>
+	</br>
+
+    <form>
+      <label>*Name:</label>
+      <input type="text" name="name" required><br>
+
+      <label>*City:</label>
+      <input type="text" name="city" required><br>
+
+      <label>*Email:</label>
+      <input type="email" name="email" required><br>
+
+      <label>*Message:</label>
+      <textarea name="message" required></textarea><br>
+
+      <input type="submit" value="Submit" class="submit-button">
+    </form>
+  </div>
+</div>
+</body>
+</html>
